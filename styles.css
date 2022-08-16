@@ -51,7 +51,20 @@ body {
 .heading {
     background-color: whitesmoke;
     grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+    grid-template: 1fr 2fr / 1fr;
 }
+
+#hr1 {
+    grid-row: 1 / 2;
+    display: grid; 
+    grid-template-columns: 1fr 10fr 3fr 1fr 2fr;
+}
+
+#hr2 {
+    grid-row: 2 / 3;
+}
+
 
 .content {
     background-color: gray;
