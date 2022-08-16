@@ -1,3 +1,59 @@
 body {
     font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+.page {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+}
+
+.dashboard-column {
+    background-color: rgb(35, 131, 175);
+    grid-area: 1 / 1 / -1 / 2;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: repeat(10, 0fr);
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.dashboard-heading {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#dashboard-logo {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.icon-text {
+    color: white;
+    font-size: 1.25rem;
+}
+
+#dheading-text {
+    font-size: 1.5rem;
+}
+
+.icon {
+    margin-right: 20px;
+    font-size: 1.25rem;
+}
+
+#communities {
+    margin-bottom: 50px;
+}
+
+.heading {
+    background-color: whitesmoke;
+    grid-area: 1 / 2 / 2 / -1;
+}
+
+.content {
+    background-color: gray;
+    grid-area: 2 / 2 / -1 / -1;
 }
