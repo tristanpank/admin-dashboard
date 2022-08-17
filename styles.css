@@ -1,3 +1,7 @@
+:root {
+    --column-bg-color: rgb(35, 131, 175);
+}
+
 body {
     font-family: 'roboto', sans-serif;
     margin: 0;
@@ -9,7 +13,7 @@ body {
 }
 
 .dashboard-column {
-    background-color: rgb(35, 131, 175);
+    background-color: var(--column-bg-color);
     grid-area: 1 / 1 / -1 / 2;
     display: grid;
     gap: 15px;
@@ -59,12 +63,64 @@ body {
     grid-row: 1 / 2;
     display: grid; 
     grid-template-columns: 1fr 10fr 3fr 1fr 2fr;
+    place-items: center center;
+    gap: 5px;
+}
+
+#search-bar {
+    background-color: lightgray;
+    height: 50%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#notification {
+    justify-self: end;
+}
+
+.profile-small {
+    height: 30px;
+    width: 30px;
+}
+
+.profile-big {
+    height: 50px;
+    width: 50px;
+}
+
+#profile-1 {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.name, #intro {
+    font-weight: bold;
+}
+
+#name, #username {
+    justify-self: start;
 }
 
 #hr2 {
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 7fr repeat(3, 1fr);
+    place-items: center center;
+    /* gap: 15px; */
 }
 
+/* #hr2 #profile-1 {
+    justify-self: end;
+} */
+
+.heading-button {
+    background-color: var(--column-bg-color);
+    color: white;
+    width: clamp(75px, 50%, 150px);
+    height: 30%;
+    border: none;
+    border-radius: 10px;
+}
 
 .content {
     background-color: gray;
