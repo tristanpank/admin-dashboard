@@ -81,8 +81,8 @@ body {
 }
 
 .profile-small {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }
 
 .profile-big {
@@ -92,6 +92,21 @@ body {
 
 #profile-1 {
     background-color: blue;
+    border-radius: 50%;
+}
+
+#profile-2 {
+    background-color: green;
+    border-radius: 50%;
+}
+
+#profile-3 {
+    background-color: red;
+    border-radius: 50%;
+}
+
+#profile-4 {
+    background-color: pink;
     border-radius: 50%;
 }
 
@@ -118,17 +133,17 @@ body {
 .heading-button {
     background-color: var(--column-bg-color);
     color: white;
-    width: clamp(75px, 50%, 150px);
+    width: clamp(100px, 60%, 150px);
     height: 30%;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .content {
     background-color: rgb(225, 232, 239);
     grid-area: 2 / 2 / -1 / -1;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 20px;
     gap: 20px;
 }
@@ -199,3 +214,27 @@ body {
     border: none;
 }
 
+.trending-header-container {
+    display: flex;
+    align-items: end;
+    padding-bottom: 10px;
+}
+
+#trending-container {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    align-items: center;
+}
+
+.profile-links {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-links-text .username {
+    font-weight: 500;
+}
+
+.profile-links-text .box-text {
+    color: rgb(68, 67, 67);
+}
